@@ -1,0 +1,341 @@
+.centerDiv{
+    display: flex;
+    justify-content: center;
+}
+.w70{
+    width: 70%;
+}
+.logo{
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height */
+letter-spacing: 0.2px;
+text-transform: uppercase;
+
+color: #232D54;
+}
+.headerLink{
+   font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.3px;
+
+color: #232D54;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+align-self: center;
+flex-grow: 0;
+margin: 32px 0px;
+}
+.button{
+   
+
+
+width: 158px;
+height: 56px;
+left: 0px;
+top: 0px;
+
+background: #FF5454; 
+border-radius: 7px;
+border: none;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+color: #fff;
+text-align: center;
+letter-spacing: 0.3px;
+}
+/* --------------------Body Part-------------------- */
+.bodyDiv{
+    height: 120vh;
+    position: absolute;
+    width: 100%;
+   /* background-color: #FF5454; */
+   background: linear-gradient(180deg, rgba(255, 84, 84, 0) 0%, #FFF7F7 100%);
+   
+border-radius: 30px;
+    
+}
+.smlTitle{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #FF5454;
+    margin-top: 30px;
+}
+.title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.3px;
+    color: #232D54;
+}
+
+
+.MsgBox{
+    width: 730px;
+}
+.bodyMsg{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 300 !important;
+font-size: 16px;
+line-height: 30px;
+text-align: center;
+letter-spacing: 0.3px;
+color: #858585;
+flex: none;
+order: 1;
+align-self: center;
+flex-grow: 0;
+margin: 0px 18px;
+}
+.learn{
+   font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 18px;
+/* identical to box height, or 112% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.3px;
+
+color: #FF5454;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+align-self: center;
+flex-grow: 0;
+margin: 20px 10px;
+}
+
+.boxSvg{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+ 
+ 
+}
+.bodySvg{
+    background: url("./Assets/svg/body.svg");
+}
+.title2{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 72px;
+    letter-spacing: 0.3px;
+    color: #232D54;
+    
+}
+
+.whatIs{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.mainSVG{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.leftSvg{
+    position: absolute;
+    width: 94px;
+    height: 424px;
+    left: 24px;
+
+}
+.rightSvg{
+    transform: rotate(180deg);
+    position: absolute;
+    width: 94px;
+    height: 424px;
+    right: 24px;
+    margin-top: 130px;
+}
+.IconDiv{
+    display: flex;
+}
+.IconText{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+    padding-top: 10px;
+    align-items: center;
+    letter-spacing: 0.3px;
+    color: #232D54;
+}
+.IconDec{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.3px;
+    color: #858585;
+}
+.IconTop{
+    margin-top: 20px;
+}
+.Section{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.title3{
+    text-align: left;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0.3px;
+    color: #232D54;
+    
+}
+.benDec{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #858585;
+}
+.benTextSec{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.benTextSec2{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.benText{
+    font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 27px;
+color: #232D54;
+}
+.benTextsml{
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.3px;
+
+color: #858585;
+}
+.IconSec{
+    margin-top: 30px;
+}
+
+
+.UseSection{
+   padding-top: 100px;
+   padding-bottom: 100px;
+   
+}
+.service{
+    padding-top: 200px;
+}
+.useTitle{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 52px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.3px;
+
+color: #232D54;
+}
+.list li{
+  
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 34px;
+/* or 189% */
+letter-spacing: 0.3px;
+
+color: #858585;
+}
+ul {
+  list-style: none;
+}
+
+.list li::before {
+   content: "•";
+   font-size: 170%; /* or whatever */
+   padding-right: 5px;
+  color: #FF5454;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+.rightImg{
+    right: 0px;
+    position: absolute;
+}
+.useIcon1{
+    width: 350px;
+}
+.useIcon2{
+    width: 400px;
+}
+.useIcon3{
+     width: 450px;
+}
+.useIcon4{
+     width: 500px;
+}
+/* --------------------Body Part End-------------------- */
+.partnerDiv{
+    margin-bottom: 60px;
+}
+.pertners{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 700;
+font-size: 38px;
+line-height: 57px;
+
+text-align: center;
+color: #232D54;
+}
+
+.partnerImg{
+    width: auto;
+    height: 50px;
+}
+.footerSec{
+    width: 100%;
+    height: 434px;
+  
+}
+
+
