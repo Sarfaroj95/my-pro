@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Navbar, Form, Nav, FormControl, Button } from 'react-bootstrap'
+import { Navbar, Nav } from 'react-bootstrap'
 
 export class Header extends Component {
     render() {
@@ -11,7 +11,7 @@ export class Header extends Component {
                     <Nav className="mr-auto">
                         <Nav.Link href="#home" className="headerLink">About us</Nav.Link>
                         <Nav.Link href="#features" className="headerLink">Features</Nav.Link>
-                        <Nav.Link href="#pricing" className="headerLink">Our Benefits</Nav.Link>
+                        <Nav.Link href="#benifit" className="headerLink">Our Benefits</Nav.Link>
                         <Nav.Link href="#pricing" className="headerLink">Use Cases</Nav.Link>
                         <Nav.Link href="#pricing" className="headerLink">Testimonial</Nav.Link>
 

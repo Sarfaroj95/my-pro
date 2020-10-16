@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button, Row, Col } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 
 import Paypal from "../../Assets/svg/paypal.svg"
 import Samsung from "../../Assets/svg/samsung.svg"

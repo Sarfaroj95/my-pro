@@ -1,6 +1,6 @@
 .centerDiv{
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .w70{
     width: 70%;
@@ -107,27 +107,27 @@ flex-grow: 0;
 margin: 0px 18px;
 }
 .learn{
-   font-style: normal;
+font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 18px;
 /* identical to box height, or 112% */
-
 display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.3px;
-
 color: #FF5454;
-
-
 /* Inside Auto Layout */
-
 flex: none;
 order: 1;
 align-self: center;
 flex-grow: 0;
 margin: 20px 10px;
+}
+
+.learn:hover{
+color: #FF5454;
+    
 }
 
 .boxSvg{
@@ -155,6 +155,9 @@ margin: 20px 10px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
+.voice{
+    padding-top: 60px;
+}
 .mainSVG{
     margin-top: 60px;
     margin-bottom: 60px;
@@ -165,6 +168,18 @@ margin: 20px 10px;
     height: 424px;
     left: 24px;
 
+}
+.bodySvg{
+   
+     width: 100%;
+     object-fit: cover;
+    background-size: cover;
+    
+}
+.bg-blue{
+   
+    margin-top: -110px;
+    
 }
 .rightSvg{
     transform: rotate(180deg);
@@ -335,7 +350,84 @@ color: #232D54;
 .footerSec{
     width: 100%;
     height: 434px;
+    padding-top: 200px;
+   
+    width: 100%;
+   /* background-color: #FF5454; */
+   background: linear-gradient(180deg, rgba(255, 84, 84, 0) 0%, #FFF7F7 100%);
+   
+   
   
+}
+
+.footerTitle{
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 34px;
+color: #232D54;
+}
+.socialIcon{
+    display: flex;
+    margin: 10px 10px;
+}
+.socialIcon li{
+   list-style-type: block;
+}
+
+.footerDiv{
+    margin-left: -40px;
+    padding-top: 20px;
+   
+}
+.footerDiv2{
+     padding-top: 70px;
+}
+.footerText{
+font-family: Poppins;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+color: #232D54;
+text-align: left;
+}
+.address{
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+color: #232D54;
+
+}
+.lastFooter{
+    background: #232D54;
+    height: 88px;
+   
+}
+
+.lastFooterText{
+font-family: Poppins;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #FFFFFF;
+padding-top: 34px;
+}
+.item{
+   margin: 30px;
+   
+}
+
+.testDiv{
+    background: #FFFFFF;
+box-shadow: 0px 4px 19px rgba(255, 84, 84, 0.08);
+border-radius: 7px;
+padding: 20px;
+
 }
 
 
