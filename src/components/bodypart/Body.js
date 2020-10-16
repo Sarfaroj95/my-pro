@@ -29,34 +29,38 @@ import { Testimonial } from "../../components/testimonial/Testimonial"
 export class Body extends Component {
     render() {
         return (
-            <div className="bodyDiv">
-                <p className="smlTitle">VOICEMATE</p>
-                <p className="title">Your Conversational<br />
+            <div >
+                <div className="bodyDiv">
+
+
+                    <p className="smlTitle">VOICEMATE</p>
+                    <p className="title">Your Conversational<br />
                     Assistant
                 </p>
-                <div className="centerDiv">
-                    <div className="MsgBox">
-                        <p className="bodyMsg">
-                            Say ‘hello’ to the future of conversational experience.
-                            With the ever-increasing complexity of reaching the
-                            masses with limited resources, companies are looking
-                            for ways to optimize and reduce manual touchpoints
+                    <div className="centerDiv">
+                        <div className="MsgBox">
+                            <p className="bodyMsg">
+                                Say ‘hello’ to the future of conversational experience.
+                                With the ever-increasing complexity of reaching the
+                                masses with limited resources, companies are looking
+                                for ways to optimize and reduce manual touchpoints
                         </p>
-                    </div>
-                </div>
-                <div className="centerDiv">
-                    <div className="boxSvg">
-                        <div>
-                            <button className="button" >Start free trial</button>
-                        </div>
-                        <div>
-                            <a href="#" className="learn">Learn more</a>
                         </div>
                     </div>
-                </div>
-                <div className="container">
-                    <div className="bg-blue">
-                        <img className="bodySvg" src={body} alt="img" />
+                    <div className="centerDiv">
+                        <div className="boxSvg">
+                            <div>
+                                <button className="button" >Start free trial</button>
+                            </div>
+                            <div>
+                                <a href="#" className="learn">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="container">
+                        <div className="bg-blue">
+                            <img className="bodySvg" src={body} alt="img" />
+                        </div>
                     </div>
                 </div>
                 <div className="whatIs voice">

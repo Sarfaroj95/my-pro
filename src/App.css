@@ -1,3 +1,7 @@
+.App{
+    overflow-x: hidden !important;
+}
+
 .centerDiv{
   display: flex;
   justify-content: center;
@@ -59,14 +63,10 @@ letter-spacing: 0.3px;
 }
 /* --------------------Body Part-------------------- */
 .bodyDiv{
-    height: 120vh;
-    position: absolute;
-    width: 100%;
    /* background-color: #FF5454; */
    background: linear-gradient(180deg, rgba(255, 84, 84, 0) 0%, #FFF7F7 100%);
-   
-border-radius: 30px;
-    
+   border-radius: 30px;
+   height: 700px; 
 }
 .smlTitle{
     font-style: normal;
@@ -153,10 +153,10 @@ color: #FF5454;
 
 .whatIs{
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 .voice{
-    padding-top: 60px;
+    padding-top: 180px;
 }
 .mainSVG{
     margin-top: 60px;
