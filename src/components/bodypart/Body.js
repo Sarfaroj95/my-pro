@@ -47,7 +47,7 @@ export class Body extends Component {
                         </p>
                         </div>
                     </div>
-                    <div className="centerDiv">
+                    <div className="centerDiv btnSec">
                         <div className="boxSvg">
                             <div>
                                 <button className="button" >Start free trial</button>
@@ -57,9 +57,14 @@ export class Body extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="container">
-                        <div className="bg-blue">
-                            <img className="bodySvg" src={body} alt="img" />
+                    <div className="centerDiv">
+                        <div className="bgSec">
+                            <div className="bg-blue">
+                                <img className="bodySvg" src={body} alt="img" />
+                            </div>
+                            <div className="bg-blue-mobile">
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -83,7 +88,7 @@ export class Body extends Component {
                         channels.
                         </p>
                 </div>
-                <div className="centerDiv">
+                <div className="centerDiv btnSec2">
                     <div className="boxSvg">
                         <div>
                             <button className="button" >Start free trial</button>
@@ -95,7 +100,7 @@ export class Body extends Component {
                 </div>
                 <div className="centerDiv">
                     <div className="mainSVG">
-                        <img src={MainSvg} alt="img" />
+                        <img className="mainsvgPic" src={MainSvg} alt="img" />
                     </div>
                 </div>
 
@@ -110,10 +115,10 @@ export class Body extends Component {
                         <div className="w70">
                             <div >
                                 <Row>
-                                    <Col>
+                                    <Col sm={12} md={6} lg={6}>
                                         <div className="IconDiv">
                                             <div>
-                                                <img src={One} alt="img" />
+                                                <img className="proIcon" src={One} alt="img" />
                                             </div>
                                             <div>
                                                 <p className="IconText">Pro-active and Personalized Engagement</p>
@@ -121,10 +126,10 @@ export class Body extends Component {
                                             </div>
                                         </div>
                                     </Col>
-                                    <Col>
+                                    <Col sm={12} md={6} lg={6}>
                                         <div className="IconDiv">
                                             <div>
-                                                <img src={Two} alt="img" />
+                                                <img className="proIcon" src={Two} alt="img" />
                                             </div>
                                             <div>
                                                 <p className="IconText">User Empowered Platform</p>
@@ -134,10 +139,10 @@ export class Body extends Component {
                                     </Col>
                                 </Row>
                                 <Row className="IconTop">
-                                    <Col>
+                                    <Col sm={12} md={6} lg={6}>
                                         <div className="IconDiv">
                                             <div>
-                                                <img src={Three} alt="img" />
+                                                <img className="proIcon" src={Three} alt="img" />
                                             </div>
                                             <div>
                                                 <p className="IconText">Multilingual Support</p>
@@ -145,10 +150,10 @@ export class Body extends Component {
                                             </div>
                                         </div>
                                     </Col>
-                                    <Col>
+                                    <Col sm={12} md={6} lg={6}>
                                         <div className="IconDiv">
                                             <div>
-                                                <img src={Four} alt="img" />
+                                                <img className="proIcon" src={Four} alt="img" />
                                             </div>
                                             <div>
                                                 <p className="IconText">Context awareness</p>
@@ -159,10 +164,10 @@ export class Body extends Component {
                                     </Col>
                                 </Row>
                                 <Row className="IconTop">
-                                    <Col>
+                                    <Col sm={12} md={6} lg={6}>
                                         <div className="IconDiv">
                                             <div>
-                                                <img src={Five} alt="img" />
+                                                <img className="proIcon" src={Five} alt="img" />
                                             </div>
                                             <div>
                                                 <p className="IconText">Enterprise Readiness</p>
@@ -191,10 +196,10 @@ export class Body extends Component {
                             <div className="whatIs">
                                 <p className="title3">Our Benefits</p>
                             </div>
-                            <div>
-                                <p className="benDec">We have researched and developed features that<br /> bring many benefits to our customers</p>
+                            <div className="benSec">
+                                <p className="benDec">We have researched and developed features that bring many benefits to our customers</p>
                             </div>
-                            <div >
+                            <div className="pcView">
                                 <Row>
                                     <Col>
                                         <div className="IconDiv">
@@ -280,13 +285,86 @@ export class Body extends Component {
 
                                     </Col>
                                 </Row>
+                            </div>
+                            <div className="mobileView">
+                                <Row>
+                                    <Col>
+                                        <div className="IconDiv">
+                                            <div>
+                                                <img src={BenOne} alt="img" />
+                                            </div>
+
+                                        </div>
+                                    </Col>
+                                    <Col>
+                                        <div className="IconDiv">
+                                            <div>
+                                                <img src={BenTwo} alt="img" />
+                                            </div>
+
+                                        </div>
+                                    </Col>
+                                    <Col>
+                                        <div className="IconDiv">
+                                            <div>
+                                                <img src={BenThree} alt="img" />
+                                            </div>
+
+                                        </div>
+                                    </Col>
+                                </Row>
+
+                                <Row className="IconSec">
+
+                                    <Col>
+                                        <div className="IconDiv">
+                                            <div>
+                                                <img src={BenFour} alt="img" />
+                                            </div>
+
+                                        </div>
+                                    </Col>
+                                    <Col>
+                                        <div className="IconDiv">
+                                            <div>
+                                                <img src={BenFive} alt="img" />
+                                            </div>
+
+                                        </div>
+                                    </Col>
+                                    <Col>
+                                        <div className="IconDiv">
+                                            <div>
+                                                <img src={BenSix} alt="img" />
+                                            </div>
+
+                                        </div>
+                                    </Col>
+                                </Row>
+
+                                <Row className="IconSec">
+                                    <Col>
+                                        <div className="IconDiv">
+                                            <div>
+                                                <img src={BenSeven} alt="img" />
+                                            </div>
+
+                                        </div>
+                                    </Col>
+                                    <Col>
+
+                                    </Col>
+                                    <Col>
+
+                                    </Col>
+                                </Row>
 
                             </div>
                         </div>
                     </div>
                 </div>
                 {/*------- Benefits Section end -------- */}
-                <div className="whatIs" id="benifit">
+                <div className="whatIs" id="usecase">
                     <p className="title2">Use Cases
                      </p>
                 </div>
@@ -294,9 +372,9 @@ export class Body extends Component {
                 <div className="UseSection">
                     <div className="centerDiv">
                         <div className="w70">
-                            <Row>
-                                <Col>
-                                    <div>
+                            <Row className="RVS">
+                                <Col className="" lg={6} md={6} sm={12}>
+                                    <div className="mobileTop">
                                         <p className="useTitle">Outbound Sales</p>
                                         <ul className="list">
                                             <li>Capture intend based on customized Scripts for prequalified leads.</li>
@@ -304,8 +382,8 @@ export class Body extends Component {
                                         </ul>
                                     </div>
                                 </Col>
-                                <Col>
-                                    <div className="rightImg">
+                                <Col className="" lg={6} md={6} sm={12}>
+                                    <div className="rightImg ">
                                         <img className="useIcon1" src={UseOne} alt="img" />
                                     </div>
                                 </Col>
@@ -315,17 +393,17 @@ export class Body extends Component {
                 </div>
 
                 {/* ----------------- use two--------------- */}
-                <div className="UseSection service">
+                <div className="UseSection">
                     <div className="centerDiv">
                         <div className="w70">
                             <Row>
-                                <Col>
-                                    <div>
+                                <Col lg={6} md={6} sm={12}>
+                                    <div className="imgLeft">
                                         <img className="useIcon2" src={UseTwo} alt="img" />
                                     </div>
                                 </Col>
-                                <Col>
-                                    <div>
+                                <Col lg={6} md={6} sm={12}>
+                                    <div className="mobileTop">
                                         <p className="useTitle">Service</p>
                                         <ul className="list">
                                             <li>IVR based Voice OTP Authentication.</li>
@@ -342,9 +420,9 @@ export class Body extends Component {
                 <div className="UseSection">
                     <div className="centerDiv">
                         <div className="w70">
-                            <Row>
-                                <Col>
-                                    <div>
+                            <Row className="RVS">
+                                <Col lg={6} md={6} sm={12}>
+                                    <div className="mobileTop">
                                         <p className="useTitle">Collection</p>
                                         <ul className="list">
                                             <li>Payment Reminder.</li>
@@ -353,7 +431,7 @@ export class Body extends Component {
                                         </ul>
                                     </div>
                                 </Col>
-                                <Col>
+                                <Col lg={6} md={6} sm={12}>
                                     <div className="rightImg">
                                         <img className="useIcon3" src={UseThree} alt="img" />
                                     </div>
@@ -368,13 +446,13 @@ export class Body extends Component {
                         <div className="w70">
                             <Row>
 
-                                <Col>
-                                    <div>
+                                <Col lg={6} md={6} sm={12}>
+                                    <div className="rightImg">
                                         <img className="useIcon4" src={UseFour} alt="img" />
                                     </div>
                                 </Col>
-                                <Col>
-                                    <div>
+                                <Col lg={6} md={6} sm={12}>
+                                    <div className="mobileTop">
                                         <p className="useTitle">Recruitment</p>
                                         <ul className="list">
                                             <li>Capture Intend on Placement from Candidate Pool.</li>

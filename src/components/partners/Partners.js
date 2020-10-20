@@ -18,10 +18,17 @@ export class Partners extends Component {
             <div className="centerDiv">
                 <div className="w70">
                     <div className="partnerDiv">
-                        <p className="pertners">Our Partners</p>
+                        <p className="ptitle">Our Partners</p>
 
                     </div>
-                    <Row>
+                    <div className="pertsection">
+                        <img className="partnerImg" src={Paypal} />
+                        <img className="partnerImg" src={Samsung} />
+                        <img className="partnerImg " src={Intel} />
+                        <img className="partnerImg" src={Google} />
+                        <img className="partnerImg" src={Skype} />
+                    </div>
+                    {/* <Row>
                         <Col>
                             <img className="partnerImg" src={Paypal} />
                         </Col>
@@ -37,7 +44,7 @@ export class Partners extends Component {
                         <Col>
                             <img className="partnerImg" src={Skype} />
                         </Col>
-                    </Row>
+                    </Row> */}
                 </div>
             </div>
         )
