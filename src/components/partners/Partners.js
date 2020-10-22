@@ -8,27 +8,29 @@ import Google from "../../Assets/svg/google.svg"
 import Skype from "../../Assets/svg/skype.svg"
 
 
+import { useTranslation } from "react-i18next"
 
 
 
 
-export class Partners extends Component {
-    render() {
-        return (
-            <div className="centerDiv">
-                <div className="w70">
-                    <div className="partnerDiv">
-                        <p className="ptitle">Our Partners</p>
+export const Partners = () => {
+    const { t, i18n } = useTranslation()
 
-                    </div>
-                    <div className="pertsection">
-                        <img className="partnerImg" src={Paypal} />
-                        <img className="partnerImg" src={Samsung} />
-                        <img className="partnerImg " src={Intel} />
-                        <img className="partnerImg" src={Google} />
-                        <img className="partnerImg" src={Skype} />
-                    </div>
-                    {/* <Row>
+    return (
+        <div className="centerDiv">
+            <div className="w70">
+                <div className="partnerDiv">
+                    <p className="ptitle">{t('our_pertnar')}</p>
+
+                </div>
+                <div className="pertsection">
+                    <img className="partnerImg" src={Paypal} />
+                    <img className="partnerImg" src={Samsung} />
+                    <img className="partnerImg " src={Intel} />
+                    <img className="partnerImg" src={Google} />
+                    <img className="partnerImg" src={Skype} />
+                </div>
+                {/* <Row>
                         <Col>
                             <img className="partnerImg" src={Paypal} />
                         </Col>
@@ -45,10 +47,8 @@ export class Partners extends Component {
                             <img className="partnerImg" src={Skype} />
                         </Col>
                     </Row> */}
-                </div>
             </div>
-        )
-    }
+        </div>
+    )
 }
 
-export default Partners

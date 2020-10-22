@@ -504,6 +504,9 @@ padding-bottom: 50px;
     border-radius: 7px;
      margin-bottom: -80px;
 }
+.maintitsec{
+    width: 30%;
+}
 
 /* ok i am chacing */
 .mobileView{
@@ -536,6 +539,9 @@ padding-bottom: 50px;
     .w70{
         width: 90%;
     }
+    .maintitsec{
+    width: 90%;
+}
 
 
 .bodyDiv{

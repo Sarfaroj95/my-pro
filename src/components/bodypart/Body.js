@@ -24,461 +24,447 @@ import UseFour from "../../Assets/svg/use-4.svg"
 import { Partners } from "../../components/partners/Partners"
 import { Footer } from "../../components/footer/Footer"
 import { Testimonial } from "../../components/testimonial/Testimonial"
+import { useTranslation } from "react-i18next"
 
 
-export class Body extends Component {
-    render() {
-        return (
-            <div >
-                <div className="bodyDiv">
+export const Body = () => {
+
+    const { t, i18n } = useTranslation()
+    return (
+        <div >
+            <div className="bodyDiv">
 
 
-                    <p className="smlTitle">VOICEMATE</p>
-                    <p className="title">Your Conversational<br />
-                    Assistant
-                </p>
-                    <div className="centerDiv">
-                        <div className="MsgBox">
-                            <p className="bodyMsg">
-                                Say ‘hello’ to the future of conversational experience.
-                                With the ever-increasing complexity of reaching the
-                                masses with limited resources, companies are looking
-                                for ways to optimize and reduce manual touchpoints
+                <p className="smlTitle">{t('title')}</p>
+                <div className="centerDiv">
+                    <div className="maintitsec">
+                        <p className="title">{t('main_title')} </p>
+                    </div>
+
+                </div>
+                <div className="centerDiv">
+                    <div className="MsgBox">
+                        <p className="bodyMsg">
+                            {t('main_dec')}
                         </p>
-                        </div>
-                    </div>
-                    <div className="centerDiv btnSec">
-                        <div className="boxSvg">
-                            <div>
-                                <button className="button" >Start free trial</button>
-                            </div>
-                            <div>
-                                <a href="#" className="learn">Learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="centerDiv">
-                        <div className="bgSec">
-                            <div className="bg-blue">
-                                <img className="bodySvg" src={body} alt="img" />
-                            </div>
-                            <div className="bg-blue-mobile">
-
-                            </div>
-                        </div>
                     </div>
                 </div>
-                <div className="whatIs voice">
-                    <p className="title2">What is Voicemate?
-
-                </p>
-                </div>
-                <div className="container">
-                    <p className="bodyMsg">
-                        Voice Mate is a multi-lingual
-                        conversational assistant that is both text and
-                        voice-based. Enabled with Natural Language
-                        Understanding (NLU), the conversational
-                        assistant can create a script from Text to
-                        Speak based which can also be customized
-                        with human-like and contextual responses in
-                        multiple global languages. In addition, Voice
-                        Mate is truly omni-channel, as it can be
-                        integrated with IVR, mobile, web, social & IoT
-                        channels.
-                        </p>
-                </div>
-                <div className="centerDiv btnSec2">
+                <div className="centerDiv btnSec">
                     <div className="boxSvg">
                         <div>
-                            <button className="button" >Start free trial</button>
+                            <button className="button" >{t('btn_1')}</button>
                         </div>
                         <div>
-                            <a href="#" className="learn">Learn more</a>
+                            <a href="#" className="learn">{t('btn_2')}</a>
                         </div>
                     </div>
                 </div>
                 <div className="centerDiv">
-                    <div className="mainSVG">
-                        <img className="mainsvgPic" src={MainSvg} alt="img" />
-                    </div>
-                </div>
+                    <div className="bgSec">
+                        <div className="bg-blue">
+                            <img className="bodySvg" src={body} alt="img" />
+                        </div>
+                        <div className="bg-blue-mobile">
 
-                {/*------- different Section-------- */}
-                <div className="Section">
-                    <div className="whatIs">
-                        <p className="title2">How are we different?
-                     </p>
-                    </div>
-                    <img className="leftSvg" src={left} alt="img" />
-                    <div className="centerDiv">
-                        <div className="w70">
-                            <div >
-                                <Row>
-                                    <Col sm={12} md={6} lg={6}>
-                                        <div className="IconDiv">
-                                            <div>
-                                                <img className="proIcon" src={One} alt="img" />
-                                            </div>
-                                            <div>
-                                                <p className="IconText">Pro-active and Personalized Engagement</p>
-                                                <p className="IconDec">Give automated reminders, follow-ups, notifications, and recommendations.</p>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                    <Col sm={12} md={6} lg={6}>
-                                        <div className="IconDiv">
-                                            <div>
-                                                <img className="proIcon" src={Two} alt="img" />
-                                            </div>
-                                            <div>
-                                                <p className="IconText">User Empowered Platform</p>
-                                                <p className="IconDec">Allows user to create campaign and script with decision flow on Realtime basis without any external support.</p>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                </Row>
-                                <Row className="IconTop">
-                                    <Col sm={12} md={6} lg={6}>
-                                        <div className="IconDiv">
-                                            <div>
-                                                <img className="proIcon" src={Three} alt="img" />
-                                            </div>
-                                            <div>
-                                                <p className="IconText">Multilingual Support</p>
-                                                <p className="IconDec">Multi global languages.</p>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                    <Col sm={12} md={6} lg={6}>
-                                        <div className="IconDiv">
-                                            <div>
-                                                <img className="proIcon" src={Four} alt="img" />
-                                            </div>
-                                            <div>
-                                                <p className="IconText">Context awareness</p>
-                                                <p className="IconDec">Captures intent and responds
-                                                contextually for FAQs and user specific information.</p>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                </Row>
-                                <Row className="IconTop">
-                                    <Col sm={12} md={6} lg={6}>
-                                        <div className="IconDiv">
-                                            <div>
-                                                <img className="proIcon" src={Five} alt="img" />
-                                            </div>
-                                            <div>
-                                                <p className="IconText">Enterprise Readiness</p>
-                                                <p className="IconDec">Connects easily to ERP, CRM,
-                                                ticketing and knowledge base systems with pre-built connector</p>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                    <Col>
-
-                                    </Col>
-                                </Row>
-                            </div>
                         </div>
                     </div>
                 </div>
-                {/*------- different Section end-------- */}
-
-                {/*------- Benefits Section -------- */}
-                <div className="Section">
-
-
-                    <img className="rightSvg" src={left} alt="img" />
-                    <div className="centerDiv">
-                        <div className="w70">
-                            <div className="whatIs">
-                                <p className="title3">Our Benefits</p>
-                            </div>
-                            <div className="benSec">
-                                <p className="benDec">We have researched and developed features that bring many benefits to our customers</p>
-                            </div>
-                            <div className="pcView">
-                                <Row>
-                                    <Col>
-                                        <div className="IconDiv">
-                                            <div>
-                                                <img src={BenOne} alt="img" />
-                                            </div>
-                                            <div>
-                                                <p className="benTextSec"><span className="benText">Reach larger audience</span><span className="benTextsml"> in short time</span></p>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                    <Col>
-                                        <div className="IconDiv">
-                                            <div>
-                                                <img src={BenTwo} alt="img" />
-                                            </div>
-                                            <div>
-                                                <p className="benTextSec"><span className="benText">Real time</span><span className="benTextsml"> audio scripts creation</span></p>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                </Row>
-
-                                <Row className="IconSec">
-                                    <Col>
-                                        <div className="IconDiv">
-                                            <div>
-                                                <img src={BenThree} alt="img" />
-                                            </div>
-                                            <div>
-                                                <p className="benTextSec"><span className="benText">Auto follow-up</span><span className="benTextsml"> on non connected database</span></p>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                    <Col>
-                                        <div className="IconDiv">
-                                            <div>
-                                                <img src={BenFour} alt="img" />
-                                            </div>
-                                            <div>
-                                                <p className="benTextSec"><span className="benText">Multiple layer</span><span className="benTextsml"> of actions on single journey</span></p>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                </Row>
-                                <Row className="IconSec">
-                                    <Col>
-                                        <div className="IconDiv">
-                                            <div>
-                                                <img src={BenFive} alt="img" />
-                                            </div>
-                                            <div>
-                                                <p className="benTextSec"><span className="benText">User defined</span><span className="benTextsml"> actions and flow</span></p>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                    <Col>
-                                        <div className="IconDiv">
-                                            <div>
-                                                <img src={BenSix} alt="img" />
-                                            </div>
-                                            <div>
-                                                <p className="benTextSec2"><span className="benText">Improves process efficiency</span><span className="benTextsml"> and captures</span>
-                                                    <span className="benTextsml"> response accurately</span>
-
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                </Row>
-                                <Row className="IconSec">
-                                    <Col>
-                                        <div className="IconDiv">
-                                            <div>
-                                                <img src={BenSeven} alt="img" />
-                                            </div>
-                                            <div>
-                                                <p className="benTextSec"><span className="benText">Reduce Operational Cost</span><span className="benTextsml"> due to manual work</span></p>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                    <Col>
-
-                                    </Col>
-                                </Row>
-                            </div>
-                            <div className="mobileView">
-                                <Row>
-                                    <Col>
-                                        <div className="IconDiv">
-                                            <div>
-                                                <img src={BenOne} alt="img" />
-                                            </div>
-
-                                        </div>
-                                    </Col>
-                                    <Col>
-                                        <div className="IconDiv">
-                                            <div>
-                                                <img src={BenTwo} alt="img" />
-                                            </div>
-
-                                        </div>
-                                    </Col>
-                                    <Col>
-                                        <div className="IconDiv">
-                                            <div>
-                                                <img src={BenThree} alt="img" />
-                                            </div>
-
-                                        </div>
-                                    </Col>
-                                </Row>
-
-                                <Row className="IconSec">
-
-                                    <Col>
-                                        <div className="IconDiv">
-                                            <div>
-                                                <img src={BenFour} alt="img" />
-                                            </div>
-
-                                        </div>
-                                    </Col>
-                                    <Col>
-                                        <div className="IconDiv">
-                                            <div>
-                                                <img src={BenFive} alt="img" />
-                                            </div>
-
-                                        </div>
-                                    </Col>
-                                    <Col>
-                                        <div className="IconDiv">
-                                            <div>
-                                                <img src={BenSix} alt="img" />
-                                            </div>
-
-                                        </div>
-                                    </Col>
-                                </Row>
-
-                                <Row className="IconSec">
-                                    <Col>
-                                        <div className="IconDiv">
-                                            <div>
-                                                <img src={BenSeven} alt="img" />
-                                            </div>
-
-                                        </div>
-                                    </Col>
-                                    <Col>
-
-                                    </Col>
-                                    <Col>
-
-                                    </Col>
-                                </Row>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/*------- Benefits Section end -------- */}
-                <div className="whatIs" id="usecase">
-                    <p className="title2">Use Cases
-                     </p>
-                </div>
-                {/* --------------use one ----------- */}
-                <div className="UseSection">
-                    <div className="centerDiv">
-                        <div className="w70">
-                            <Row className="RVS">
-                                <Col className="" lg={6} md={6} sm={12}>
-                                    <div className="mobileTop">
-                                        <p className="useTitle">Outbound Sales</p>
-                                        <ul className="list">
-                                            <li>Capture intend based on customized Scripts for prequalified leads.</li>
-                                            <li>Validate Demand thru auto calling.</li>
-                                        </ul>
-                                    </div>
-                                </Col>
-                                <Col className="" lg={6} md={6} sm={12}>
-                                    <div className="rightImg ">
-                                        <img className="useIcon1" src={UseOne} alt="img" />
-                                    </div>
-                                </Col>
-                            </Row>
-                        </div>
-                    </div>
-                </div>
-
-                {/* ----------------- use two--------------- */}
-                <div className="UseSection">
-                    <div className="centerDiv">
-                        <div className="w70">
-                            <Row>
-                                <Col lg={6} md={6} sm={12}>
-                                    <div className="imgLeft">
-                                        <img className="useIcon2" src={UseTwo} alt="img" />
-                                    </div>
-                                </Col>
-                                <Col lg={6} md={6} sm={12}>
-                                    <div className="mobileTop">
-                                        <p className="useTitle">Service</p>
-                                        <ul className="list">
-                                            <li>IVR based Voice OTP Authentication.</li>
-                                            <li>Capture Service Rating.</li>
-                                            <li>Conduct Survey with buyer database on Brand loyalty. Product Recommendation.</li>
-                                        </ul>
-                                    </div>
-                                </Col>
-                            </Row>
-                        </div>
-                    </div>
-                </div>
-                {/* ------------------ use three ----------------- */}
-                <div className="UseSection">
-                    <div className="centerDiv">
-                        <div className="w70">
-                            <Row className="RVS">
-                                <Col lg={6} md={6} sm={12}>
-                                    <div className="mobileTop">
-                                        <p className="useTitle">Collection</p>
-                                        <ul className="list">
-                                            <li>Payment Reminder.</li>
-                                            <li>Intend Capture.</li>
-                                            <li>Automated Multi-Settlement targeting based on movement in Collection bucket.</li>
-                                        </ul>
-                                    </div>
-                                </Col>
-                                <Col lg={6} md={6} sm={12}>
-                                    <div className="rightImg">
-                                        <img className="useIcon3" src={UseThree} alt="img" />
-                                    </div>
-                                </Col>
-                            </Row>
-                        </div>
-                    </div>
-                </div>
-                {/* -------------------- use four ------------------- */}
-                <div className="UseSection">
-                    <div className="centerDiv">
-                        <div className="w70">
-                            <Row>
-
-                                <Col lg={6} md={6} sm={12}>
-                                    <div className="rightImg">
-                                        <img className="useIcon4" src={UseFour} alt="img" />
-                                    </div>
-                                </Col>
-                                <Col lg={6} md={6} sm={12}>
-                                    <div className="mobileTop">
-                                        <p className="useTitle">Recruitment</p>
-                                        <ul className="list">
-                                            <li>Capture Intend on Placement from Candidate Pool.</li>
-                                            <li>Conduct Recorded Interview.</li>
-                                            <li>Qualify Candidates based on answers received as text.</li>
-                                        </ul>
-                                    </div>
-                                </Col>
-                            </Row>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <Testimonial />
-                </div>
-
-                <div>
-                    <Partners />
-                </div>
-                <div>
-                    <Footer />
-                </div>
-
             </div>
-        )
-    }
+            <div className="whatIs voice">
+                <p className="title2">{t('voice_title')}</p>
+            </div>
+            <div className="container">
+                <p className="bodyMsg">
+                    {t('voice_dec')}
+                </p>
+            </div>
+            <div className="centerDiv btnSec2">
+                <div className="boxSvg">
+                    <div>
+                        <button className="button" >{t('btn_1')}</button>
+                    </div>
+                    <div>
+                        <a href="#" className="learn">{t('btn_2')}</a>
+                    </div>
+                </div>
+            </div>
+            <div className="centerDiv">
+                <div className="mainSVG">
+                    <img className="mainsvgPic" src={MainSvg} alt="img" />
+                </div>
+            </div>
+
+            {/*------- different Section-------- */}
+            <div className="Section">
+                <div className="whatIs">
+                    <p className="title2">{t('diff_title')}</p>
+                </div>
+                <img className="leftSvg" src={left} alt="img" />
+                <div className="centerDiv">
+                    <div className="w70">
+                        <div >
+                            <Row>
+                                <Col sm={12} md={6} lg={6}>
+                                    <div className="IconDiv">
+                                        <div>
+                                            <img className="proIcon" src={One} alt="img" />
+                                        </div>
+                                        <div>
+                                            <p className="IconText">{t('diff_icon1_title')}</p>
+                                            <p className="IconDec">{t('diff_icon1_dec')}</p>
+                                        </div>
+                                    </div>
+                                </Col>
+                                <Col sm={12} md={6} lg={6}>
+                                    <div className="IconDiv">
+                                        <div>
+                                            <img className="proIcon" src={Two} alt="img" />
+                                        </div>
+                                        <div>
+                                            <p className="IconText">{t('diff_icon2_title')}</p>
+                                            <p className="IconDec">{t('diff_icon2_dec')}</p>
+                                        </div>
+                                    </div>
+                                </Col>
+                            </Row>
+                            <Row className="IconTop">
+                                <Col sm={12} md={6} lg={6}>
+                                    <div className="IconDiv">
+                                        <div>
+                                            <img className="proIcon" src={Three} alt="img" />
+                                        </div>
+                                        <div>
+                                            <p className="IconText">{t('diff_icon3_title')}</p>
+                                            <p className="IconDec">{t('diff_icon3_dec')}</p>
+                                        </div>
+                                    </div>
+                                </Col>
+                                <Col sm={12} md={6} lg={6}>
+                                    <div className="IconDiv">
+                                        <div>
+                                            <img className="proIcon" src={Four} alt="img" />
+                                        </div>
+                                        <div>
+                                            <p className="IconText">{t('diff_icon4_title')}</p>
+                                            <p className="IconDec">{t('diff_icon4_dec')}</p>
+                                        </div>
+                                    </div>
+                                </Col>
+                            </Row>
+                            <Row className="IconTop">
+                                <Col sm={12} md={6} lg={6}>
+                                    <div className="IconDiv">
+                                        <div>
+                                            <img className="proIcon" src={Five} alt="img" />
+                                        </div>
+                                        <div>
+                                            <p className="IconText">{t('diff_icon5_title')}</p>
+                                            <p className="IconDec">{t('diff_icon5_dec')}</p>
+                                        </div>
+                                    </div>
+                                </Col>
+                                <Col>
+
+                                </Col>
+                            </Row>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/*------- different Section end-------- */}
+
+            {/*------- Benefits Section -------- */}
+            <div className="Section">
+
+
+                <img className="rightSvg" src={left} alt="img" />
+                <div className="centerDiv">
+                    <div className="w70">
+                        <div className="whatIs">
+                            <p className="title3">{t('ben_title')}</p>
+                        </div>
+                        <div className="benSec">
+                            <p className="benDec">{t('ben_dec')}</p>
+                        </div>
+                        <div className="pcView">
+                            <Row>
+                                <Col>
+                                    <div className="IconDiv">
+                                        <div>
+                                            <img src={BenOne} alt="img" />
+                                        </div>
+                                        <div>
+                                            <p className="benTextSec"><span className="benText">{t('ben_icon1_btxt')}</span><span className="benTextsml"> {t('ben_icon1_ntxt')}</span></p>
+                                        </div>
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div className="IconDiv">
+                                        <div>
+                                            <img src={BenTwo} alt="img" />
+                                        </div>
+                                        <div>
+                                            <p className="benTextSec"><span className="benText">{t('ben_icon2_btxt')}</span><span className="benTextsml"> {t('ben_icon2_ntxt')}</span></p>
+                                        </div>
+                                    </div>
+                                </Col>
+                            </Row>
+
+                            <Row className="IconSec">
+                                <Col>
+                                    <div className="IconDiv">
+                                        <div>
+                                            <img src={BenThree} alt="img" />
+                                        </div>
+                                        <div>
+                                            <p className="benTextSec"><span className="benText">{t('ben_icon3_btxt')}</span><span className="benTextsml"> {t('ben_icon3_ntxt')}</span></p>
+                                        </div>
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div className="IconDiv">
+                                        <div>
+                                            <img src={BenFour} alt="img" />
+                                        </div>
+                                        <div>
+                                            <p className="benTextSec"><span className="benText">{t('ben_icon4_btxt')}</span><span className="benTextsml"> {t('ben_icon4_ntxt')}</span></p>
+                                        </div>
+                                    </div>
+                                </Col>
+                            </Row>
+                            <Row className="IconSec">
+                                <Col>
+                                    <div className="IconDiv">
+                                        <div>
+                                            <img src={BenFive} alt="img" />
+                                        </div>
+                                        <div>
+                                            <p className="benTextSec"><span className="benText">{t('ben_icon5_btxt')}</span><span className="benTextsml"> {t('ben_icon5_ntxt')}</span></p>
+                                        </div>
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div className="IconDiv">
+                                        <div>
+                                            <img src={BenSix} alt="img" />
+                                        </div>
+                                        <div>
+                                            <p className="benTextSec2"><span className="benText">{t('ben_icon6_btxt')}</span><span className="benTextsml"> {t('ben_icon6_ntxt')}</span>
+                                                {/* <span className="benTextsml"> {t('ben_icon6b_ntxt')}</span> */}
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </Col>
+                            </Row>
+                            <Row className="IconSec">
+                                <Col>
+                                    <div className="IconDiv">
+                                        <div>
+                                            <img src={BenSeven} alt="img" />
+                                        </div>
+                                        <div>
+                                            <p className="benTextSec"><span className="benText">{t('ben_icon7_btxt')}</span><span className="benTextsml"> {t('ben_icon7_ntxt')}</span></p>
+                                        </div>
+                                    </div>
+                                </Col>
+                                <Col>
+
+                                </Col>
+                            </Row>
+                        </div>
+                        <div className="mobileView">
+                            <Row>
+                                <Col>
+                                    <div className="IconDiv">
+                                        <div>
+                                            <img src={BenOne} alt="img" />
+                                        </div>
+
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div className="IconDiv">
+                                        <div>
+                                            <img src={BenTwo} alt="img" />
+                                        </div>
+
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div className="IconDiv">
+                                        <div>
+                                            <img src={BenThree} alt="img" />
+                                        </div>
+
+                                    </div>
+                                </Col>
+                            </Row>
+
+                            <Row className="IconSec">
+
+                                <Col>
+                                    <div className="IconDiv">
+                                        <div>
+                                            <img src={BenFour} alt="img" />
+                                        </div>
+
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div className="IconDiv">
+                                        <div>
+                                            <img src={BenFive} alt="img" />
+                                        </div>
+
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div className="IconDiv">
+                                        <div>
+                                            <img src={BenSix} alt="img" />
+                                        </div>
+
+                                    </div>
+                                </Col>
+                            </Row>
+
+                            <Row className="IconSec">
+                                <Col>
+                                    <div className="IconDiv">
+                                        <div>
+                                            <img src={BenSeven} alt="img" />
+                                        </div>
+
+                                    </div>
+                                </Col>
+                                <Col>
+
+                                </Col>
+                                <Col>
+
+                                </Col>
+                            </Row>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/*------- Benefits Section end -------- */}
+            <div className="whatIs" id="usecase">
+                <p className="title2">{t('cas_title')}</p>
+            </div>
+            {/* --------------use one ----------- */}
+            <div className="UseSection">
+                <div className="centerDiv">
+                    <div className="w70">
+                        <Row className="RVS">
+                            <Col className="" lg={6} md={6} sm={12}>
+                                <div className="mobileTop">
+                                    <p className="useTitle">{t('cas_out_title')}</p>
+                                    <ul className="list">
+                                        <li>{t('cas_out_1')}</li>
+                                        <li>{t('cas_out_2')}</li>
+                                    </ul>
+                                </div>
+                            </Col>
+                            <Col className="" lg={6} md={6} sm={12}>
+                                <div className="rightImg ">
+                                    <img className="useIcon1" src={UseOne} alt="img" />
+                                </div>
+                            </Col>
+                        </Row>
+                    </div>
+                </div>
+            </div>
+
+            {/* ----------------- use two--------------- */}
+            <div className="UseSection">
+                <div className="centerDiv">
+                    <div className="w70">
+                        <Row>
+                            <Col lg={6} md={6} sm={12}>
+                                <div className="imgLeft">
+                                    <img className="useIcon2" src={UseTwo} alt="img" />
+                                </div>
+                            </Col>
+                            <Col lg={6} md={6} sm={12}>
+                                <div className="mobileTop">
+                                    <p className="useTitle">{t('cas_ser_title')}</p>
+                                    <ul className="list">
+                                        <li>{t('cas_ser_1')}</li>
+                                        <li>{t('cas_ser_2')}</li>
+                                        <li>{t('cas_ser_2')}</li>
+                                    </ul>
+                                </div>
+                            </Col>
+                        </Row>
+                    </div>
+                </div>
+            </div>
+            {/* ------------------ use three ----------------- */}
+            <div className="UseSection">
+                <div className="centerDiv">
+                    <div className="w70">
+                        <Row className="RVS">
+                            <Col lg={6} md={6} sm={12}>
+                                <div className="mobileTop">
+                                    <p className="useTitle">{t('cas_coll_title')}</p>
+                                    <ul className="list">
+                                        <li>{t('cas_coll_1')}</li>
+                                        <li>{t('cas_coll_2')}</li>
+                                        <li>{t('cas_coll_3')}</li>
+                                    </ul>
+                                </div>
+                            </Col>
+                            <Col lg={6} md={6} sm={12}>
+                                <div className="rightImg">
+                                    <img className="useIcon3" src={UseThree} alt="img" />
+                                </div>
+                            </Col>
+                        </Row>
+                    </div>
+                </div>
+            </div>
+            {/* -------------------- use four ------------------- */}
+            <div className="UseSection">
+                <div className="centerDiv">
+                    <div className="w70">
+                        <Row>
+
+                            <Col lg={6} md={6} sm={12}>
+                                <div className="rightImg">
+                                    <img className="useIcon4" src={UseFour} alt="img" />
+                                </div>
+                            </Col>
+                            <Col lg={6} md={6} sm={12}>
+                                <div className="mobileTop">
+                                    <p className="useTitle">{t('cas_rec_title')}</p>
+                                    <ul className="list">
+                                        <li>{t('cas_rec_1')}</li>
+                                        <li>{t('cas_rec_2')}</li>
+                                        <li>{t('cas_rec_3')}</li>
+                                    </ul>
+                                </div>
+                            </Col>
+                        </Row>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <Testimonial />
+            </div>
+
+            <div>
+                <Partners />
+            </div>
+            <div>
+                <Footer />
+            </div>
+
+        </div>
+    )
 }
 
-export default Body
+
+
